@@ -1,3 +1,4 @@
+
 /*punto5: operador condicional ternario:*/
 
 
