@@ -1,3 +1,4 @@
+
 /*Dado este array, realizar funciones de arrays moderno*/
 
 let carros = [
@@ -79,12 +80,14 @@ const result4 = carros.filter((item)=>{
 console.log("quiero que traiga todas las camionetas.");
 
 /*punto3*/
+const newobjet = () => {}
+  carros.push(
+    { color: 'naranja', tipo: 'peugeot 208' ,  registroDia: new Date ('2021'), capacidad: '5' },
+  );
+  
+  
+  console.log(carros); 
 
-carros.push(
-  { color: 'naranja', tipo: 'peugeot 208' ,  registroDia: new Date ('2021'), capacidad: '5' },
-);
-
-console.log(carros); 
 
 /*punto4*/
 let resutado = carros.map (item => {

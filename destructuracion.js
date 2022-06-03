@@ -1,3 +1,4 @@
+
 /*punto6*/
 const carro =  {
       color: 'gris',
