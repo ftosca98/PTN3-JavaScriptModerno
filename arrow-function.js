@@ -45,15 +45,40 @@ let carros = [
     },
   ];
 
-/*punto1: hacer un arrow funcion que me filtre mediante un argumento de color:  rojo*/
- let color = carros.filter( x => x.color == 'rojo')
- console.log(color);
+/*punto1*/
 
-/*punto2: hacer un arrow funcion que me filtre mediante un argumento de tipo de carro: quiero que traiga todas las camionetas*/
- let tipoDeCarro = carros.filter( x => x.tipo == 'camioneta')
- console.log(tipoDeCarro);
+/*ej1*/
+const result = carros.filter((item)=>{
+  if(item.color === "rojo")
+  return item;
+});
+console.log(result);
 
-/*punto3: hacer un arrow funcion  que agrege un nuevo objeto al array, agregarlo al final*/
+/*ej2*/
+
+const result2 = carros.filter((item)=>{
+  if(item.color === "color")
+  return item;
+});
+console.log("rojo");
+
+/*punto2*/
+
+/*ej1*/
+const result3 = carros.filter((item)=>{
+  if(item.tipo ==="camioneta")
+  return item;
+});
+console.log(result3);
+
+/*ej2*/
+const result4 = carros.filter((item)=>{
+  if(item.tipo ==="camionetas")
+  return item;
+});
+console.log("quiero que traiga todas las camionetas.");
+
+/*punto3*/
 
 carros.push(
   { color: 'naranja', tipo: 'peugeot 208' ,  registroDia: new Date ('2021'), capacidad: '5' },
@@ -61,9 +86,7 @@ carros.push(
 
 console.log(carros); 
 
-/*punto4: mapear todos los objetos y mostrar por consola cada uno de sus ítems, utilizar .map()  o for
-
-hacer un llamado de cada función con su parámetro.  */
+/*punto4*/
 let resutado = carros.map (item => {
   return {
     ...item,
@@ -71,13 +94,18 @@ let resutado = carros.map (item => {
   }
 });
 
-console.log(resultado);
+console.log(carros);
 
-carros.forEach(function(carros) {
+
+/*carros.forEach(function(carros) {
   console.log(carros.color)
   console.log(carros.tipo)
   console.log(carros.registroDia)
   console.log(carros.capacidad)
 })
+*/
+console.warn('For in');
+for( let i in carros) {
+  console.log(carros[i]);
 
-
+}
